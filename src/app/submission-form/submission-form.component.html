@@ -1,0 +1,12 @@
+<div class="modal-body">
+<input class="input-group" [(ngModel)]="valueSelected">
+<button class="btn btn-primary" (click)="subscribeToNewValue()" style="margin-top: 10px; margin-bottom: 10px">Save</button>
+</div>
+<div class="modal-body" *ngIf="valueToBeDisplayed > 0">
+  <p class="align-content-md-end">Number of parameterd to be operated with: {{this.valueToBeDisplayed}} million 😆</p>
+  <button class="btn btn-success" style="margin-top: 10px; margin-bottom: 10px" (click)="this.execute()">Go</button>
+</div>
+<div>
+  <p class="text-left">{{this.fcValue}}</p>
+  <p class="text-left">{{this.vanillaValue}}</p>
+</div>
